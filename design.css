@@ -1,3 +1,24 @@
 table {
   border: 1px solid;
 }
+    table {
+    page-break-after: auto !important
+}
+
+tr {
+    page-break-inside: avoid !important;
+    page-break-after: auto !important
+}
+
+td {
+    page-break-inside: avoid !important;
+    page-break-after: auto !important
+}
+
+thead {
+    display: table-header-group !important
+}
+
+tfoot {
+    display: table-footer-group !important
+}
