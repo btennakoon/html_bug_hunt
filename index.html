@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-size: 1.25rem;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-image: url('https://thumbs.dreamstime.com/b/abstract-pastel-multi-coloured-liquid-fluid-blob-background-dots-multicolored-azure-style-dynamic-color-geometrical-shape-175439641.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        table{
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td, th {
+            border: 1px solid #ddd;
+            padding: 15px;
+        }
+        tr {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        tr:first-child {
+            background-color: #00a321;
+        }
+        tr:first-child:hover {
+            background-color: #00a321;
+            cursor: default;
+        }
+        tr.glass:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Contact</th>
+                <th>Address</th>
+            </tr>
+            <tr class="glass" id="clickable">
+                <td>Jhon Doe</td>
+                <td>084-555-5555</td>
+                <td>No:12/C, Some Street, City</td>
+            </tr>
+            <tr class="glass" id="clickable">
+                <td>Jhon Doe</td>
+                <td>084-555-5555</td>
+                <td>No:12/C, Some Street, City</td>
+            </tr>
+            <tr class="glass" id="clickable">
+                <td>Jhon Doe</td>
+                <td>084-555-5555</td>
+                <td>No:12/C, Some Street, City</td>
+            </tr>
+            <tr class="glass" id="clickable">
+                <td>Jhon Doe</td>
+                <td>084-555-5555</td>
+                <td>No:12/C, Some Street, City</td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        const items = document.querySelectorAll("#clickable");
+        console.log(items);
+    </script>
+</body>
+</html>
