@@ -111,19 +111,20 @@
         </table>
     </div>
     <script>
-        const items = document.querySelectorAll("#clickable");
-        items.forEach(element => {
-            element.addEventListener("click", () =>{
-                openForm();
-                element.getElementsByTagName("td").forEach(td => {
-                    console.log(td.innerHTML)
-                })
-            })
-        });
         var display = document.getElementById("display");
         var col1 = document.getElementById("col1");
         var col2 = document.getElementById("col2");
         var col3 = document.getElementById("col3");
+        const items = document.querySelectorAll("#clickable");
+        items.forEach(element => {
+            element.addEventListener("click", () => {
+                openForm();
+                const tds = element.querySelectorAll("td");
+                col1.innerHTML = tds[0].innerHTML;
+                col2.innerHTML = tds[1].innerHTML;
+                col3.innerHTML = tds[2].innerHTML;
+            })
+        });
         function closeForm(){
             col1.innerHTML = col2.innerHTML = col3.innerHTML = "";
             display.style.display = "none";
