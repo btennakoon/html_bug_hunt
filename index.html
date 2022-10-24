@@ -34,7 +34,7 @@
             padding: 15px;
         }
         tr {
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.5);
         }
         tr:first-child {
             background-color: #00a321;
@@ -47,8 +47,8 @@
             background: rgba(255, 255, 255, 0.2);
             border-radius: 16px;
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(5px);
-            -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
             border: 1px solid rgba(255, 255, 255, 0.3);
         }
         .display{
@@ -112,6 +112,7 @@
     </div>
     <script>
         var display = document.getElementById("display");
+        display.style.display = "none";
         var col1 = document.getElementById("col1");
         var col2 = document.getElementById("col2");
         var col3 = document.getElementById("col3");
