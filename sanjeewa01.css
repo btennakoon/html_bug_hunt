@@ -1,0 +1,23 @@
+button {
+	width: 350px;
+	height: 40px;
+	font-size: 17px;
+	border-radius:50px;
+	border: 2px solid #1697e2;
+	background: transparent;
+	color: black;
+	margin-top: 50px ;
+	
+	
+}
+
+::placeholder{
+	color: black;
+}
+
+button:hover
+{
+	cursor: pointer;
+	background-color:#1697e2;
+	transition: 0.6s;
+}
