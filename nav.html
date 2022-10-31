@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>DT Innovation</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        *{
+    margin: 0%;
+    padding: 8px;
+}
+
+.container{
+    display: flex;
+}
+
+img{
+    width: 100px;
+}
+
+.navbar{
+    text-align: right;
+    flex: 1;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline;
+    margin-right: 30px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color:blue ;
+    /* border-right: 1px solid #ccc; */
+}
+
+.navbar ul li a:hover{
+    color: red;
+}
+
+.mobnav h3{
+    padding: 20px;
+}
+
+.mobnav ul li{
+    width: 100%;
+    display: block;
+    padding: 20px;
+}
+
+.mobnav ul li a{
+    width: 100%;
+}
+
+.mobnav{
+    display: none;
+}
+
+
+@media screen and (max-width: 852px) {
+    
+    .container{
+        width: 100%;
+        display: inline;
+    }
+
+    .container h1{
+        /* text-align: right; */
+    }
+
+    /* .navbar{
+        text-align: center;
+    } */
+
+    .navbar ul li{
+        list-style: none;
+        display: inline;
+        margin-right: 60px;
+    }
+
+    .navbar ul{
+        display: none;
+    }
+
+    .mobnav{
+        display: block;
+        text-align: left;
+        display: flex;
+        display: inline;
+    }
+
+    .mobnav ul li{
+        display: block;
+    }
+}
+
+/* @media screen and (max-width: 800px){
+   .container h1{
+    text-align: right;
+   } 
+} */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="images/logo1.png" alt="">
+        <div class="navbar">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>   
+        </div>
+
+        <div class="image_1">
+            <!-- <img src="images/image1.jfif" alt=""> -->
+        </div>
+    </div>
+</body>
+</html>
