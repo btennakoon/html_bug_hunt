@@ -1,0 +1,41 @@
+    table {
+    page-break-after: auto !important
+}
+
+tr {
+    page-break-inside: avoid !important;
+    page-break-after: auto !important
+}
+
+td {
+    page-break-inside: avoid !important;
+    page-break-after: auto !important
+}
+
+thead {
+    display: table-header-group !important
+}
+
+tfoot {
+    display: table-footer-group !important
+}
+My HTML:
+
+<table>
+<thead>
+    <tr>
+        <th>Quant.</th>
+        <th>Cod.</th>
+        <th>Mantenimiento</th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let data of getData()"> <!-- Dynamic Generate Rows-->
+        <td>{{data?.quant}}</td>
+        <td>{{data?.codItem}}</td>
+        <td>{{data?.item}}</td>
+    </tr>
+</tbody>
+<tfoot>
+
+</tfoot></table>
